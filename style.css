@@ -80,6 +80,7 @@ display: none;
     padding: 10px;
      border-radius: 30px;
      border: solid 1px darkolivegreen;
+    curser:pointer;
 
 }
 .categories p:hover{
