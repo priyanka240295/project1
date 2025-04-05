@@ -45,6 +45,9 @@ body{
     display: flex;
     gap:10px;align-items: center;
 }
+.navbar__s4{
+    display: none;
+}
 .mylearning{
     position: relative;
     cursor:pointer;
@@ -80,7 +83,7 @@ display: none;
     padding: 10px;
      border-radius: 30px;
      border: solid 1px darkolivegreen;
-    curser:pointer;
+     cursor: pointer;
 
 }
 .categories p:hover{
@@ -107,9 +110,10 @@ display: none;
     top: 25%;
     left:10%;
     animation-name: zoom;
-    animation-duration: 2s;
+    animation-duration: 5s;
     opacity: 0;
     animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 
 }
 @keyframes zoom{
@@ -140,7 +144,9 @@ display: none;
 
 }
 .course-card{
-    width: 350px;
+   flex-grow:1 ;
+   flex-basis:20%; 
+   margin: 5px;
 }
 .course-card img{
     height:50% ;
@@ -192,4 +198,29 @@ align-items: center;
 display: flex;
 justify-content: space-between;
 }
+/*media queries*/
+@media screen and (max-width:800px) {
+    body{ 
+    font-size:10px;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .course-card{ 
+    font-size:10px;
+    }
+    .categories{
+    display: none;
+    }
+     .navbar__s2,.navbar__s3
+     {display:none;
+    }
+     .navbar__s4{
+        display: block;
+     }
+
+}
+
+
+
 
